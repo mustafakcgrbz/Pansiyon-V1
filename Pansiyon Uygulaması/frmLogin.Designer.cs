@@ -75,6 +75,7 @@
             this.txtParola.PasswordChar = '*';
             this.txtParola.Size = new System.Drawing.Size(151, 29);
             this.txtParola.TabIndex = 3;
+            this.txtParola.UseSystemPasswordChar = true;
             // 
             // btnGiris
             // 
