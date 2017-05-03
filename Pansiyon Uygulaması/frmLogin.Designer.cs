@@ -69,9 +69,11 @@
             // txtParola
             // 
             this.txtParola.BackColor = System.Drawing.Color.PeachPuff;
+            this.txtParola.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.txtParola.Location = new System.Drawing.Point(141, 65);
             this.txtParola.Name = "txtParola";
-            this.txtParola.Size = new System.Drawing.Size(151, 25);
+            this.txtParola.PasswordChar = '*';
+            this.txtParola.Size = new System.Drawing.Size(151, 29);
             this.txtParola.TabIndex = 3;
             // 
             // btnGiris
@@ -107,7 +109,7 @@
             this.Controls.Add(this.label1);
             this.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "frmLogin";
