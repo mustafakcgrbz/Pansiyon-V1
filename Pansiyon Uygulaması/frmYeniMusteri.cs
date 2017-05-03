@@ -94,11 +94,10 @@ namespace Pansiyon_Uygulaması
         private void btnKaydet_Click(object sender, EventArgs e)
         {
             baglanti.Open();
-            SqlCommand komut = new SqlCommand("Insert Into MusteriEkle (Adi, Soyadi, TC, Telefon, Eposta, Odano, Ucret) Values ('" + txtAd.Text + "','" + txtSoyad.Text + "','" + txtTC.Text + "','" + mskTelefon.Text + "','" + txtposta.Text + "','" + txtOdano.Text + "','" + txtUcret.Text + "')", baglanti);
+            SqlCommand komut = new SqlCommand("Insert Into MusteriEkle (Adi, Soyadi, TC, Telefon, Eposta, Odano, Ucret,Giristarihi,Cikistarihi) Values ('" + txtAd.Text + "','" + txtSoyad.Text + "','" + txtTC.Text + "','" + mskTelefon.Text + "','" + txtposta.Text + "','" + txtOdano.Text + "','" + txtUcret.Text + "','" + dtpGiris.Value.ToString("yyy-MM-dd") + "','" + dtpCikis.Value.ToString("yyy-MM-dd") + "')", baglanti);
             komut.ExecuteNonQuery();
             baglanti.Close();
             MessageBox.Show("Müşteri Kaydı Yapıldı!!");
         }
     }
 }
-//,'" + dtpGiris.Text + "','" + dtpCikis.Text + "'
