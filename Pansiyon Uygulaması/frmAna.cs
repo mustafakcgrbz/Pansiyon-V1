@@ -36,5 +36,11 @@ namespace Pansiyon_Uygulaması
             frmOdalar form = new frmOdalar();
             form.Show();
         }
+
+        private void btnMusteriler_Click(object sender, EventArgs e)
+        {
+            frmMusteriler form = new frmMusteriler();
+            form.Show();
+        }
     }
 }
