@@ -97,7 +97,7 @@ namespace Pansiyon_Uygulaması
             SqlCommand komut = new SqlCommand("Insert Into MusteriEkle (Adi, Soyadi, TC, Telefon, Eposta, Odano, Ucret) Values ('" + txtAd.Text + "','" + txtSoyad.Text + "','" + txtTC.Text + "','" + mskTelefon.Text + "','" + txtposta.Text + "','" + txtOdano.Text + "','" + txtUcret.Text + "')", baglanti);
             komut.ExecuteNonQuery();
             baglanti.Close();
-            MessageBox.Show("Müşteri Kaydı Yapıldı");
+            MessageBox.Show("Müşteri Kaydı Yapıldı!!");
         }
     }
 }
